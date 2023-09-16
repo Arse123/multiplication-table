@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Таблица умножения</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1 id='zapros'>Таблица умножения</h1>
+    <form action="/result" method="post">
+        <label for="number">Введите число:</label>
+        <input type="number" id="number" name="number" required>
+        <button type="submit">Результат</button>
+    </form>
+</body>
+</html>
